@@ -1,0 +1,256 @@
+body{
+	background-color:rgb(80,80,80);
+}
+
+#menu{
+	width:100%;
+	height:50px;
+	background-color: rgb(50,50,50);
+	margin: 0px auto;
+	position:absolute;
+	top:50px;
+	left:0px;
+}
+
+#strugglesList{
+	width:100%;
+	position:absolute;
+	top:100px;
+	left:0px;
+	height:auto;
+	background-color:rgb(80,80,80);
+}
+
+.struggleContainer{
+	background-color:rgb(255,255,100);
+	width:500px;
+	min-height:100px;
+	max-height:500px;
+	overflow:scroll;
+	position:relative;
+	margin:0px auto;
+	margin-top: 20px;
+	border-radius:5px;
+	padding:10px;
+}
+
+.struggleContent{
+	position:absolute;
+	top:5px;
+	left:5px;
+	padding-bottom:5px;
+	min-height:100px;
+	max-height: 500px;
+}
+
+.struggleContent h3{
+	position:relative;
+	margin: 0px auto;
+	top:5px;
+	left:5px;
+	font-family: Arial;
+	color:rgb(60,60,60);
+	max-width: 500px;
+    min-width: 500px;
+}
+
+.struggleContent p{
+	position:relative;
+	left:5px;
+	top:8px;
+	margin: 0px auto;
+	font-family: Arial;
+	font-size: 14px;
+	color:rgb(60,60,60);
+}
+
+.riderCount{
+	position:absolute;
+	bottom:32px;
+	left:10px;
+	font-family: Arial;
+	font-size: 12px;
+	color:rgb(60,60,60);
+}
+
+.struggleSubmit{
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	border-radius: 5px;
+	font-family: Arial;
+	color: #fff200;
+	width:100%;
+	font-size: 14px;
+	padding: 7px 0px 7px 0px;
+	box-shadow: inset 0 0 0 2px rgb(255,255,100);
+	background: rgb(80,80,80);
+	text-decoration: none;
+	text-align:center;
+}
+
+.struggleSubmit:hover{
+	background: #000000;
+	text-decoration: none;
+}
+
+.join{
+	position:absolute;
+	bottom:0px;
+	right:0px;
+}
+
+.join {
+	border-radius: 5px;
+	font-family: Arial;
+	color: #fff200;
+	width:100%;
+	font-size: 14px;
+	padding: 7px 0px 7px 0px;
+	box-shadow: inset 0 0 0 2px rgb(255,255,100);
+	background: rgb(80,80,80);
+	text-decoration: none;
+	text-align:center;
+}
+
+.join:hover {
+	background: #000000;
+	text-decoration: none;
+}
+
+.postStruggle{
+	display:none;
+	position:relative;
+	top:100px;
+	width:520px;
+	height:200px;
+	background-color:rgb(255,255,100);
+	border-radius:5px;
+	box-shadow: 0px 0px 70px -10px rgba(0,0,0,1);
+	margin:0px auto;
+}
+
+.copyStruggleUrlModal{
+	display:none;
+	position:relative;
+	top:100px;
+	width:520px;
+	height:100px;
+	background-color:rgb(255,255,100);
+	border-radius:5px;
+	box-shadow: 0px 0px 70px -10px rgba(0,0,0,1);
+	margin:0px auto;
+}
+
+.copyStruggleUrlInput{
+	position:relative;
+	top:15px;
+	width:100%;
+	height:25px;
+	padding: 0px;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size:15px;
+	font-family: arial;
+	text-align:center;
+}
+
+.copyDirections{
+	font-family:arial;
+	position:relative;
+	top:10px;
+	left:10px;
+}
+
+.struggleTitleInput{
+	position:relative;
+	top:15px;
+	width:100%;
+	height:25px;
+	padding: 0px;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size:15px;
+	font-family: arial;
+	text-align:center;
+}
+
+.struggleInput{
+	position:relative;
+	top:30px;
+	width:100%;
+	height:100px;
+	padding: 0px;
+	border: none;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size:15px;
+	font-family: arial;
+	text-align:center;
+}
+
+#backgroundShader{
+	display:none;
+	width:100%;
+	height:100%;
+	position:fixed;
+	background-color:rgba(30,30,30,.9);
+	margin:0px auto;
+	top:0px;
+	left:0px;
+}
+
+.menuItem {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    font-size: 25px;
+    margin: 0 0 0 0;
+    padding: 0;
+    width: 125px;
+}
+
+.menuItem h2{
+    margin: 0;
+    text-align: center;
+}
+
+#menuItemContainer{
+	margin:0px auto;
+	width:520px;
+}
+
+#logo{
+	width:100%;
+	height:50px;
+	background-color:rgb(30,30,30);
+	position:absolute;
+	top:0px;
+	left:0px;
+	margin: 0px;
+}
+
+.joined-true{
+	background-color:rgb(180,180,100);
+}
+
+.joined-true:hover{
+	background-color:rgb(180,180,100);
+}
+
+.share{
+	position:absolute;
+	bottom:32px;
+	right:10px;
+	font-family: Arial;
+	font-size: 12px;
+	color:rgb(60,60,60);
+}
+
+.currentPage{
+	border-radius:10px;
+	background-color:rgb(180,180,100);
+	height:50px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All time top struggle busses!</title>
+    <meta name="viewport" content="width=520, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="./css/struggleBus.css">
+    <script type="text/javascript" src="./js/busTemplate.js"></script>
+    <script type="text/javascript" src="./js/jsCookie.js"></script>
+    <script type="text/javascript" src="./js/struggleUiController.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+    	createTopBar();
+    	$("#top").addClass("currentPage");
+    	busHeartbeat("./getTopBusses");
+    	
+    	$(document.body).on('click', '#post' ,function(){
+        	showPostBusModal();
+        });
+    	
+    	$(document.body).on('click', '.struggleSubmit' ,function(){
+        	postBus();
+        });
+    	
+    	$("#backgroundShader").on('click', function(){
+    		hidePostBusModal();
+    		hideCopyBusModal();
+    	});
+    	
+    	$(document.body).on('click', '.joined-false', function(e){
+    			ridePost(this.id);
+    	});
+    	
+    	$(document.body).on('click', '.share', function(e){
+    		showCopyBusModal("http://98.124.104.244:14533/viewPost.html?"+this.id);
+		});
+    });
+    
+    </script>
+</head>
+<body>
+
+	<div id="transitioner"></div>
+	<div id="logo">
+		<img src="./img/strugglebuslogo.png"></img>
+	</div>
+	<div id="menu">
+	</div>
+
+    <div id="hotStrugglesContainer">
+    	<div id="strugglesList">
+    	</div>
+    </div>
+    <div id="backgroundShader"></div>
+    <div class="postStruggle">
+		<input type="text" name="struggleTitle" class="struggleTitleInput" placeholder="Title">
+		<textarea name="struggle" rows="4" cols="50" class="struggleInput" placeholder="INSERT STRUGGLE HERE"></textarea>
+		<div class="struggleSubmit">SUBMIT STRUGGLE</div>
+	</div>
+	<div class="copyStruggleUrlModal">
+		<div class="copyDirections">Copy this link to share your struggle bus:</div>
+		<input type="text" name="struggleTitle" class="copyStruggleUrlInput" placeholder="url">
+	</div>
+    
+</body>
+</html>
